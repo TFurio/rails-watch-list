@@ -1,0 +1,12 @@
+<h1>New List</h1>
+
+<%= form_with(model: @list, url: lists_path, method: :post) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit 'Create List' %>
+  </div>
+<% end %>
